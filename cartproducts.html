@@ -1,0 +1,68 @@
+<html>
+   <head>
+      <title>Sportswear - Shopping Cart</title>
+      <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/style.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-sm bg-light navbar-dark mb-4">
+         <a class="navbar-brand" href="index.html">
+            <img src="Images/logo.png" alt="Jewelry Store Logo" style="width:60px;">
+         </a>
+         <form class="form-inline ml-auto">
+            <div id="links">
+               <a href="login.html" class="btn btn-outline-primary mr-1">Login</a>
+               <a href="register.html" class="btn btn-outline-success mr-1">Register</a>
+            </div>
+
+            <div id="userinfo">
+               <div class="mr-2 mt-2">
+                  <span>Hello,</span>
+                  <a id="user"></a>
+
+                  <a class="btn position-relative mr-2 mt-2" id="cartLink" title="Cart">
+                     <i class="fas fa-shopping-cart"></i>
+                     <span id="cartCount" class="badge badge-pill badge-danger" style="position: absolute; top: 0; right: 0;">0</span>
+                  </a>
+
+                  <div class="drpdwn_cart">
+                     <div></div>
+                     <a class="btn btn-outline-dark" href="cartproducts.html">View All Products</a>
+                  </div>
+               </div>
+               
+               <a class="btn btn-outline-danger mr-1" id="logout" href="index.html">Logout</a>
+            </div>
+         </form>
+      </nav>
+
+      <div class="container-fluid">
+         <div class="cart-container">
+            <h2 class="cart-title">Shopping Cart</h2>
+            <div id="cartItemsContainer" class="cart-items">
+            </div>
+            <div class="total-price-section">
+               <h3>Total Price: $<span id="totalPrice">0</span></h3>
+            </div>
+         </div>
+      </div>
+
+      <div>
+         <div class="favorites-container">
+            <h2 class="favorites-title">Favorite Items</h2>
+            <div class="favorites-slider">
+               <div class="favorites-items" id="favoritesContainer">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
